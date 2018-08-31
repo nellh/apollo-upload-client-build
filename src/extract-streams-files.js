@@ -1,4 +1,6 @@
-import extractFiles, { isObject } from 'extract-files'
+import { extractFiles } from 'extract-files'
+
+const isObject = value => typeof value === 'object' && value !== null
 
 export function NoFormDataException(message) {
   this.message = message
